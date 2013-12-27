@@ -21,7 +21,7 @@ my $count = 0;
 sub show_help
 {
 print <<HELP;
-Usage ./$0 -u <user> -p <password> -d <directory_or_file> [-t timeout] [--help]
+Usage ./$0 -u <user> -p <password> -d <directory_or_file> [-t delay] [--help]
 The script scrobbles random music files from a directory with specified interval.
 -u <user>           - your login on last.fm
 -p <password>       - your password on last.fm
