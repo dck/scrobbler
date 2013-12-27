@@ -1,9 +1,5 @@
 #!/usr/bin/perl
 
-##
-#   (c) Denis Usanov 2011 :>
-##
-
 use utf8;
 use strict;
 use warnings;
@@ -25,16 +21,14 @@ my $count = 0;
 sub show_help
 {
 print <<HELP;
-Usage ./$0 -u <user> -p <password> -d <directory_or_file> [-t timeout] [-help]
-The script scrobbles random file from the directory (it may use a single file)
-with a specified interval.
--u <user>           - your login on las.fm
+Usage ./$0 -u <user> -p <password> -d <directory_or_file> [-t timeout] [--help]
+The script scrobbles random music files from a directory with specified interval.
+-u <user>           - your login on last.fm
 -p <password>       - your password on last.fm
 -d <directory>      - path to directory with mp3 files to scrobble. 
                       You can specify a signle file
 -t <delay>          - an interval. Default value is 60 seconds
--h --help           - this text :>
-(c) Denis Usanov 2011
+-h --help           - this text
 HELP
     die("\n");
 }
